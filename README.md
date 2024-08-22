@@ -101,16 +101,30 @@ Replace `<service_name>` and `<port>` with the appropriate values.
 Kubernetes manifests are provided to deploy these services either individually or all at once.
 
 1. **Individual Deployment**:
-   - Navigate to the ```Kubernetes Manifest/Individual Manifests/``` directory and apply the desired manifest files:
-   ```bash
-   kubectl apply -f <service-manifest.yaml>
-   ```
+
+- Navigate to the ```Kubernetes Manifest/Individual Manifests/``` directory and apply the desired manifest files:
+```
+cd Kubernetes Manifest/Individual Manifests/
+```
+
+```bash
+kubectl apply -f <service-manifest.yaml>
+```
+
+```bash
+kubectl apply -f adservice.yaml
+```
 
 2. **All-in-One Deployment**:
-   - Use the `All in one k8s manifest.yaml` file to deploy all services at once:
-   ```bash
-   kubectl apply -f Kubernetes Manifest/All in one k8s manifest.yaml
-   ```
+
+- Use the `All in one k8s manifest.yaml` file to deploy all services at once:
+```
+cd Kubernetes Manifest/
+```
+
+```bash
+kubectl apply -f Kubernetes Manifest/All in one k8s manifest.yaml
+```
 
 
 ---
